@@ -56,6 +56,7 @@ It serves as a comprehensive showcase of my dual expertise in **Web Engineering*
 │   ├── js/             # Client-side Logic
 │   └── img/            # Optimized Assets (WebP/PNG)
 └── README.md           # Documentation
+```
 
 ## 📝 Credits
 Developed by **Cristian Ceni**.
