@@ -8,6 +8,10 @@
   <meta name="color-scheme" content="dark">
   <title>Ceni - Home</title>
   <link rel="shortcut icon" type="image/png" href="img/CS_white_all.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -28,7 +32,6 @@
 </head>
 
 <body>
-  <div class="nav-blur"></div>
   <header class="nav">
     <div class="nav-wrap">
       <div class="loghetto">
@@ -60,19 +63,17 @@
 
         <div class="row" style="margin-top:14px">
           <a class="btn" href="#projects">Vedi progetti</a>
-          <a class="btn ghost" href="Ceni-Curriculum.pdf" download>Scarica CV</a>
+          <a class="btn ghost" href="ceni-curriculum.pdf" download>Scarica CV</a>
         </div>
 
       </div>
     </div>
   </main>
 
-  <br>
-
   <section id="about">
     <h2>Chi sono</h2>
 
-    <img src="img/picprof.png" style="width: 100px; border-radius: 100%; margin-top: 15px;"alt="Faccia a culo">
+    <img class="avatar" src="img/picprof.png" alt="Foto profilo">
 
     <div class="wrap">
       <p>Amo la tecnologia e apprendo rapidamente. Mi piace lavorare in squadra ma so gestire anche progetti in
@@ -118,58 +119,97 @@
     <div class="grid cols-3">
 
       <article class="card reveal">
-        <h3>Gustò Donnini – Sito completo</h3>
-        <p class="sub"> (completato e attivo)</p>
-        <p class="sub">Sito vetrina e menù digitale per gli ospiti più una versione dedicata ai dipendenti.</p>
-        <a href="https://gustodonnini.com/">
-          <p class="sub">Visita il sito ↗</p>
+        <h3>Gustò Donnini — Menù digitale</h3>
+        <p class="meta">(nuova versione)</p>
+        <p>Web app statica per consultare il menù, filtrare/cercare i piatti e preparare una comanda da inviare su WhatsApp.</p>
+        <a href="https://gustodonnininew.netlify.app/">
+          <p class="meta">Visita il sito ↗</p>
         </a>
-        <div class="row"><span class="tag">HTML</span><span class="tag">Website</span></div>
+        <a href="https://github.com/cristianceni5/gustodonnininew">
+          <p class="meta">Repository GitHub ↗</p>
+        </a>
+        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web app</span></div>
+      </article>
+
+      <article class="card reveal">
+        <h3>Treninfo — Ricerca treni</h3>
+        <p class="meta">(attivo)</p>
+        <p>Web app con backend Node.js (Express) su Netlify Functions: proxy verso servizi Trenitalia (ViaggiaTreno/LeFrecce) per evitare CORS e uniformare le risposte.</p>
+        <a href="https://treninfo.netlify.app/">
+          <p class="meta">Visita il sito ↗</p>
+        </a>
+        <a href="https://github.com/cristianceni5/treninfo">
+          <p class="meta">Repository GitHub ↗</p>
+        </a>
+        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Netlify</span></div>
+      </article>
+
+      <article class="card reveal">
+        <h3>Arinails — Sito vetrina</h3>
+        <p class="meta">(attivo)</p>
+        <p>Landing page responsive per una Nail Artist: portfolio lavori, sezioni informative e integrazione social per conversione/contatti.</p>
+        <a href="https://arinails.netlify.app">
+          <p class="meta">Visita il sito ↗</p>
+        </a>
+        <a href="https://github.com/cristianceni5/arinails-website">
+          <p class="meta">Repository GitHub ↗</p>
+        </a>
+        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Website</span><span class="tag">Netlify</span></div>
+      </article>
+
+      <article class="card reveal">
+        <h3>Gustò Donnini – Sito completo</h3>
+        <p class="meta">(completato e attivo)</p>
+        <p>Sito vetrina e menù digitale per gli ospiti più una versione dedicata ai dipendenti.</p>
+        <a href="https://gustodonnini.com/">
+          <p class="meta">Visita il sito ↗</p>
+        </a>
+        <div class="row tags"><span class="tag">HTML</span><span class="tag">Website</span></div>
       </article>
 
       <article class="card reveal">
         <h3>Hostaria Modì – Menù digitale</h3>
-        <p class="sub"> (in sviluppo)</p>
-        <p class="sub">Menù digitale per la visione delle portate, con immagine, descrizione, prezzi e allergeni
+        <p class="meta">(in sviluppo)</p>
+        <p>Menù digitale per la visione delle portate, con immagine, descrizione, prezzi e allergeni
           (modello simil Gustò).</p>
         <a href="https://hostariamodi.netlify.app/">
-          <p class="sub">Visita il sito demo ↗</p>
+          <p class="meta">Visita il sito demo ↗</p>
         </a>
-        <div class="row"><span class="tag">HTML</span><span class="tag">Website</span></div>
+        <div class="row tags"><span class="tag">HTML</span><span class="tag">Website</span></div>
       </article>
 
       <article class="card reveal">
-        <h3>FirenzeOsp - App mobile</h3>
-        <p class="sub"> (in sviluppo)</p>
-        <p class="sub">App cross-platform che contiene le info di tutti gli ospedali di Firenze. Reparti, ascensori,
+        <h3>FirenzeOsp – App mobile</h3>
+        <p class="meta">(in sviluppo)</p>
+        <p>App cross-platform che contiene le info di tutti gli ospedali di Firenze. Reparti, ascensori,
           padiglioni tutti in un unica app.</p>
         <a href="https://hostariamodi.netlify.app/">
-          <p class="sub">Visita la pagina ↗</p>
+          <p class="meta">Visita la pagina ↗</p>
         </a>
-        <div class="row"><span class="tag">Unity C#</span><span class="tag">iOS</span><span class="tag">Android</span>
+        <div class="row tags"><span class="tag">Unity C#</span><span class="tag">iOS</span><span class="tag">Android</span>
         </div>
       </article>
 
       <article class="card reveal">
-        <h3>MoveDance - Gioco</h3>
-        <p class="sub"> (deprecato)</p>
-        <p class="sub">Conoscete JustDance? Ecco MoveDance è una interpretazione di quel gioco in chiave più realistica
+        <h3>MoveDance – Gioco</h3>
+        <p class="meta">(deprecato)</p>
+        <p>Conoscete JustDance? Ecco MoveDance è una interpretazione di quel gioco in chiave più realistica
           e gratuita.</p>
         <a href="">
-          <p class="sub">Visita la pagina ↗</p>
+          <p class="meta">Visita la pagina ↗</p>
         </a>
-        <div class="row"><span class="tag">Unity C#</span><span class="tag">Windows</span><span
+        <div class="row tags"><span class="tag">Unity C#</span><span class="tag">Windows</span><span
             class="tag">Console</span></div>
       </article>
 
       <article class="card reveal">
-        <h3>CarOS - Dashboard per veicoli</h3>
-        <p class="sub"> (completato)</p>
-        <p class="sub">Dahsboard per autoveicoli, personalizzabile e compatibile con Android e iOS.</p>
+        <h3>CarOS – Dashboard per veicoli</h3>
+        <p class="meta">(completato)</p>
+        <p>Dashboard per autoveicoli, personalizzabile e compatibile con Android e iOS.</p>
         <a href="">
-          <p class="sub">Visita la pagina ↗</p>
+          <p class="meta">Visita la pagina ↗</p>
         </a>
-        <div class="row"><span class="tag">Unity C#</span><span class="tag">Auto</span><span class="tag">iOS</span><span
+        <div class="row tags"><span class="tag">Unity C#</span><span class="tag">Auto</span><span class="tag">iOS</span><span
             class="tag">Android</span></div>
       </article>
     </div>
@@ -208,14 +248,14 @@
       <div class="card center reveal">
         <img src="img/CS_white_all.png" alt="Logo bianco" style="width:min(150px,80%);">
         <div class="row" style="margin-top:10px">
-          <a class="btn" href="CS_white_all.png" download>Scarica PNG bianco</a>
+          <a class="btn" href="img/CS_white_all.png" download>Scarica PNG bianco</a>
         </div>
       </div>
 
       <div class="card light center reveal">
         <img src="img/CS_black_all.png" alt="Logo nero" style="width:min(150px,80%);">
         <div class="row" style="margin-top:10px">
-          <a class="btn" href="CS_black_all.png" download>Scarica PNG nero</a>
+          <a class="btn" href="img/CS_black_all.png" download>Scarica PNG nero</a>
         </div>
       </div>
 
@@ -242,7 +282,7 @@
       <div class="card reveal">
         <h3>Curriculum</h3>
         <p>Versione PDF aggiornata.</p>
-        <a class="btn" href="Ceni-Curriculum.pdf" download>Scarica</a>
+        <a class="btn" href="ceni-curriculum.pdf" download>Scarica</a>
       </div>
     </div>
   </section>
