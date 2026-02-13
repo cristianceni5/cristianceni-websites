@@ -18,8 +18,8 @@
 
     --shadow-sm: 0 1px 0 rgba(255,255,255,0.05), 0 14px 40px rgba(0,0,0,0.35);
 
-    --font-sans: "Google Sans", "Product Sans", Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-    --font-meta: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-sans: 'Manrope', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-meta: 'Manrope', system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
 /* Base styles */
