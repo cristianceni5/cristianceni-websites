@@ -1,62 +1,52 @@
-# Cristian Ceni | Software Engineering Portfolio
+<img src="img/cs_white_all.png" style="width: 100px;">
 
-![Role](https://img.shields.io/badge/role-Student%20%2F%20Developer-blue)
-![Stack](https://img.shields.io/badge/tech-Full%20Stack%20%26%20Unity-blueviolet)
-![License](https://img.shields.io/badge/license-MIT-green)
+# Cristian Ceni's (Ceni Dev) website
 
-## 👨‍💻 Abstract
-This repository hosts the source code for my personal digital portfolio, accessible at [cristianceni.netlify.app](https://cristianceni.netlify.app).
-It serves as a comprehensive showcase of my dual expertise in **Web Engineering** (HTML/CSS/JS) and **Application Development** (C#/Unity), reflecting my academic path at the **University of Florence (UniFI)**.
+### Simple portfolio website, where you can find my:
 
-## 🏛️ Engineering Philosophy
-* **Performance-First:** Utilizing vanilla technologies to eliminate framework overhead.
-* **Cross-Platform:** Developing solutions that bridge Web, Mobile (iOS/Android), and Desktop environments.
-* **Semantic Structure:** Strict adherence to HTML5 standards for accessibility and SEO.
+- References.
 
-## 📂 Project Portfolio (As Listed)
+- Curriculum Vitae. [Download here directly](ceni-curriculum.pdf)
 
-### 🌐 Web Engineering
-* **[Gustò Donnini](https://gustodonnini.com)** `Production`
-    * *Description:* Full-stack solution for the catering industry, featuring a public brochureware site and a restricted-access digital menu system for employees.
-    * *Stack:* HTML5, CSS3, JS.
+- Projects (in development | Stopped | Deprecated).
 
-* **[Hostaria Modì](https://hostariamodi.netlify.app/)** `In Development`
-    * *Description:* Digital menu interface focusing on allergen transparency and visual cataloging of dishes.
-    * *Stack:* HTML5, CSS3 (Responsive Grid).
+- Jobs and School Education.
 
-### 📱 Application Development (Unity/C#)
-* **FirenzeOsp** `Alpha`
-    * *Description:* Cross-platform mobile application aggregating logistical data (wards, elevators, pavilions) for major Florentine hospitals.
-    * *Tech:* Unity Engine, C# Scripting.
 
-* **CarOS** `Completed`
-    * *Description:* A custom automotive dashboard interface designed for Android head units and iOS tablets, offering a personalized driver experience.
-    * *Tech:* Unity UI System.
+## Structure and porpouse
 
-* **MoveDance** `Deprecated`
-    * *Description:* A motion-based rhythm game prototype inspired by industry standards, exploring real-time input processing.
-    * *Tech:* Windows Console / Unity.
+The site is entirely in [HTML](index.html), using a simple [script.js](script.js) for display the projects in it and an external [CSS](styles.css) for the styles.
+I made this website just for upload all my contents in one place, and i think that's the best approach to share them
+with the common people that doesn't know GitHub.
 
-## 🛠️ Technical Skill Set
+The site has this script in the `<head>` tag for the indicization and better search powered by [Schema.org](https://schema.org/)
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Languages** | C#, JavaScript (ES6+), HTML5, CSS3 |
-| **Frameworks/Engines** | Unity (2D/3D), UWP (Universal Windows Platform) |
-| **Infrastructure** | Netlify (CD), Git, Windows Server, IIS |
-| **Tools** | Visual Studio, VS Code, Git Bash |
-
-## 📦 Project Structure
-```text
-/
-├── index.html          # Main Entry Point
-├── Ceni-Curriculum.pdf # Resume Asset
-├── assets/
-│   ├── css/            # Stylesheets
-│   ├── js/             # Client-side Logic
-│   └── img/            # Optimized Assets (WebP/PNG)
-└── README.md           # Documentation
+``` js
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Cristian Ceni",
+    "jobTitle":"Tutto fare",
+    "address":{"@type":"PostalAddress","addressLocality":"Firenze","addressRegion":"FI","postalCode":"50136","addressCountry":"Italy"},
+    "email":"mailto:cenicristian@yahoo.com",
+    "telephone":"+393398923317",
+    "sameAs":["https://instagram.com/cenicristian"],
+    "url":"/"
 ```
 
-## 📝 Credits
-Developed by **Cristian Ceni**.
+and this one for the nav-bar behavior, that basically add a listener to the button that expand the nav-bar in the mobile version and control the state.
+
+``` js
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('site-menu');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', toggle.classList.contains('active'));
+    });
+```
+
+## Visit my projects
+
+This one is a pretty simple project, but take a look to my other projects, simply visit [cenidev.com](https://cenidev.com) and enjoy.
+
+© Copyright 2026 Ceni Dev
