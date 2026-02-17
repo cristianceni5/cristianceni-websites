@@ -1,342 +1,126 @@
-<!-- Developed by Cristian Ceni 2025, all the rights are reserved -->
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="color-scheme" content="dark">
-  <title>Ceni - Home</title>
-  <link rel="shortcut icon" type="image/png" href="img/CS_white_all.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Cristian Ceni",
-    "jobTitle":"Tutto fare",
-    "address":{"@type":"PostalAddress","addressLocality":"Firenze","addressRegion":"FI","postalCode":"50136","addressCountry":"Italy"},
-    "email":"mailto:cenicristian@yahoo.com",
-    "telephone":"+393398923317",
-    "sameAs":["https://instagram.com/cenicristian"],
-    "url":"/"
-  }
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5d4273fc75.js" crossorigin="anonymous"></script>
+    <title>Ceni Dev</title>
 </head>
 
 <body>
-  <header class="nav">
-    <div class="nav-wrap">
-      <div class="loghetto">
-        <a href="#top" class="brand"><img src="img/cs_white_all.png" alt="CS"></a>
-        <p>Cristian Ceni</p>
-      </div>
-
-      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul id="site-menu">
-        <li><a href="#education">Istruzione</a></li>
-        <li><a href="#projects">Progetti</a></li>
-        <li><a href="#skills">Competenze</a></li>
-        <li><a href="#brand">Brand</a></li>
-        <li><a href="#contact">Contatti</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main id="top" class="hero">
-    <div class="hero-grid">
-      <div>
-        <h1>Sviluppo web e app</h1>
-
-        <p>Progetto e sviluppo siti web e app Unity. Lavoro con HTML/CSS/JS, C# e piano piano anche altro. Qui
-          trovi alcuni lavori e i contatti.</p>
-
-        <div class="row" style="margin-top:14px">
-          <a class="btn" href="#projects">Vedi progetti</a>
-          <a class="btn ghost" href="ceni-curriculum.pdf" download>Scarica CV</a>
+    <header class="nav">
+        <div class="nav-wrap">
+            <div class="main-title">
+                <img src="img/cs_white.png" alt="Ceni Dev Logo">
+                <p>Ceni Dev</p>
+            </div>
+            <!-- Navbar for now disabled, i'm lazy to adapt it for the mobile
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-home"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="nav-icon">
+                                <i class="fa-solid fa-bars-progress"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            -->
         </div>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="home-wrap">
+                <div class="home-logo">
+                    <img src="img/cs_white.png" alt="Ceni Dev Logo">
+                </div>
+                <h1>Ciao! Benvenuti sul cenidev.com</h1>
+                <p>Qui puoi trovare tutte le informazioni su Cristian Ceni - Ceni Dev che cerchi.</p>
+                <div class="buttons-contact">
+                    <a href="https://github.com/cristianceni5" target="_blank" rel="noopener noreferrer">
+                        <span class="button-icon">
+                            <i class="fa-brands fa-github"></i>
+                            <p>Contattami</p>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/cenicristian" target="_blank" rel="noopener noreferrer">
+                        <span class="button-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Seguimi</p>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </div>
-  </main>
+        <hr>
 
-  <section id="about">
-    <h2>Chi sono</h2>
+        <section class="education" id="education">
+            <div class="education-wrap">
+                <h2>Carriera scolastica</h2>
+                <div class="dynamic-edu"></div>
+            </div>
+        </section>
 
-    <img class="avatar" src="img/picprof.png" alt="Foto profilo">
+        <hr>
 
-    <div class="wrap">
-      <p>Amo la tecnologia e apprendo rapidamente. Mi piace lavorare in squadra ma so gestire anche progetti in
-        autonomia. Dal 2021 sviluppo siti web, app UWP in C# e soluzioni cross-platform con Unity, sia per passione che
-        per piccoli clienti. Ho anche esperienza nel settore elettrico come elettricista manutentore, con qualifica Enel
-        da giuntista, e collaboro saltuariamente con l’azienda di famiglia nel montaggio di infissi.</p>
+        <section class="jobs" id="jobs">
+            <div class="jobs-wrap">
+                <h2>Esperienze lavorative</h2>
+                <div class="dynamic-jobs"></div>
+            </div>
+        </section>
 
-      <p>Diploma in <em>Manutenzione e Assistenza Tecnica</em> (94/100). Attualmente iscritto a <em>Ingegneria
-          Informatica</em> presso l’Università degli Studi di Firenze.</p>
+        <hr>
 
-      <p class="row"><span class="pill">📍 Firenze, Italia</span></p>
+        <section class="projects" id="projects">
+            <div class="projects-wrap">
+                <h2>Progetti da developer</h2>
+                <div class="dynamic-proj"></div>
+            </div>
+        </section>
+    </main>
 
-    </div>
-
-  </section>
-
-  <section id="education">
-    <h2>Istruzione</h2>
-
-    <p class="sub">Percorso formativo.</p>
-
-    <div class="grid">
-      <div class="card reveal">
-        <img src="img/unifi.png" style="width: 85px;" alt="UniFi">
-        <h3>Università degli Studi di Firenze</h3>
-        <p>Primo anno di Ingegneria Informatica L8 Tecnico‑Applicativa. </p>
-      </div>
-
-      <div class="card reveal">
-        <img src="img/cellini.png" style="width: 85px;" alt="UniFi">
-        <h3>IIS Cellini ‑ Tornabuoni, Firenze</h3>
-        <p>Diploma in <em>Manutenzione e Assistenza Tecnica</em> – voto 94/100. Stage in impianti elettrici,
-          videosorveglianza e automazione.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Progetti</h2>
-    <p class="sub">Selezione di lavori.</p>
-
-    <section id="featured-projects">
-      <h3 style="margin-top:0">In evidenza</h3>
-      <div class="grid cols-2">
-        <article class="card reveal">
-          <h3>Treninfo — Ricerca treni</h3>
-          <p class="meta">(attivo, progetto avanzato)</p>
-          <p>Web app con backend Node.js (Express) su Netlify Functions: proxy verso servizi Trenitalia (ViaggiaTreno/LeFrecce) per evitare CORS e uniformare le risposte.</p>
-          <a href="https://treninfo.cenidev.com/">
-            <p class="meta">Visita il sito ↗</p>
-          </a>
-          <a href="https://github.com/cristianceni5/treninfo">
-            <p class="meta">Repository GitHub ↗</p>
-          </a>
-          <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Netlify</span></div>
-        </article>
-        <article class="card reveal">
-          <h3>Gauss — Social/app per studenti</h3>
-          <p class="meta">(prototipo)</p>
-          <p>Prototipo di social/app per studenti: condivisione di risorse, strumenti di calcolo, grafici e interfaccia moderna.</p>
-          <a href="https://gauss.cenidev.com/">
-            <p class="meta">Visita il sito ↗</p>
-          </a>
-          <a href="https://github.com/cristianceni5/gauss">
-            <p class="meta">Repository GitHub ↗</p>
-          </a>
-          <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web app</span></div>
-        </article>
-      </div>
-    </section>
-    <div class="grid cols-3">
-
-      <article class="card reveal">
-        <h3>Gustò Donnini — Menù digitale</h3>
-        <p class="meta">(nuova versione)</p>
-        <p>Web app statica per consultare il menù, filtrare/cercare i piatti e preparare una comanda da inviare su WhatsApp.</p>
-        <a href="https://gustodonnininew.netlify.app/">
-          <p class="meta">Visita il sito ↗</p>
-        </a>
-        <a href="https://github.com/cristianceni5/gustodonnininew">
-          <p class="meta">Repository GitHub ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web app</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>Treninfo — Ricerca treni</h3>
-        <p class="meta">(attivo)</p>
-        <p>Web app con backend Node.js (Express) su Netlify Functions: proxy verso servizi Trenitalia (ViaggiaTreno/LeFrecce) per evitare CORS e uniformare le risposte.</p>
-        <a href="https://treninfo.cenidev.com/">
-          <p class="meta">Visita il sito ↗</p>
-        </a>
-        <a href="https://github.com/cristianceni5/treninfo">
-          <p class="meta">Repository GitHub ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Netlify</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>Gauss — Social/app per studenti</h3>
-        <p class="meta">(prototipo)</p>
-        <p>Prototipo di social/app per studenti: condivisione di risorse, strumenti di calcolo, grafici e interfaccia moderna.</p>
-        <a href="https://gauss.cenidev.com/">
-          <p class="meta">Visita il sito ↗</p>
-        </a>
-        <a href="https://github.com/cristianceni5/gauss">
-          <p class="meta">Repository GitHub ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Web app</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>Arinails — Sito vetrina</h3>
-        <p class="meta">(attivo)</p>
-        <p>Landing page responsive per una Nail Artist: portfolio lavori, sezioni informative e integrazione social per conversione/contatti.</p>
-        <a href="https://arinails.netlify.app">
-          <p class="meta">Visita il sito ↗</p>
-        </a>
-        <a href="https://github.com/cristianceni5/arinails-website">
-          <p class="meta">Repository GitHub ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Website</span><span class="tag">Netlify</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>Gustò Donnini – Sito completo</h3>
-        <p class="meta">(completato e attivo)</p>
-        <p>Sito vetrina e menù digitale per gli ospiti più una versione dedicata ai dipendenti.</p>
-        <a href="https://gustodonnini.com/">
-          <p class="meta">Visita il sito ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">Website</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>Hostaria Modì – Menù digitale</h3>
-        <p class="meta">(in sviluppo)</p>
-        <p>Menù digitale per la visione delle portate, con immagine, descrizione, prezzi e allergeni
-          (modello simil Gustò).</p>
-        <a href="https://hostariamodi.netlify.app/">
-          <p class="meta">Visita il sito demo ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">HTML</span><span class="tag">Website</span></div>
-      </article>
-
-      <article class="card reveal">
-        <h3>FirenzeOsp – App mobile</h3>
-        <p class="meta">(in sviluppo)</p>
-        <p>App cross-platform che contiene le info di tutti gli ospedali di Firenze. Reparti, ascensori,
-          padiglioni tutti in un unica app.</p>
-        <a href="https://hostariamodi.netlify.app/">
-          <p class="meta">Visita la pagina ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">Unity C#</span><span class="tag">iOS</span><span class="tag">Android</span>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2026 Ceni Dev. Tutti i diritti riservati.
+            </div>
+            <div class="developer">
+                Developed by:
+                <a href="https://cenidev.com" target="_blank" rel="noopener noreferrer" class="developer-link">
+                    Ceni Dev
+                </a>
+            </div>
         </div>
-        <article class="card reveal">
-          <h3>Gustò Donnini – Sito completo</h3>
-          <p class="meta">(completato e attivo)</p>
-          <p>Sito vetrina e menù digitale per gli ospiti più una versione dedicata ai dipendenti.</p>
-          <a href="https://gustodonnini.com/">
-            <p class="meta">Visita il sito ↗</p>
-          </a>
-          <div class="row tags"><span class="tag">HTML</span><span class="tag">Website</span></div>
-        </article>
-      </article>
-
-      <article class="card reveal">
-        <h3>CarOS – Dashboard per veicoli</h3>
-        <p class="meta">(completato)</p>
-        <p>Dashboard per autoveicoli, personalizzabile e compatibile con Android e iOS.</p>
-        <a href="">
-          <p class="meta">Visita la pagina ↗</p>
-        </a>
-        <div class="row tags"><span class="tag">Unity C#</span><span class="tag">Auto</span><span class="tag">iOS</span><span
-            class="tag">Android</span></div>
-      </article>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Competenze</h2>
-
-    <p class="sub">Stack e abilità principali.</p>
-
-    <div class="grid">
-      <div class="card reveal">
-        <h3>Software</h3>
-        <p>HTML, CSS, JavaScript, C#, Unity, UWP, Git, Windows Server, IIS.</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Metodi</h3>
-        <p>Interfacce semplici, performance su hardware reale, organizzazione pratica.</p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Lingue</h3>
-        <p>Italiano madrelingua. Inglese avanzato.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="brand">
-    <h2>Brand</h2>
-
-    <p class="sub">Loghi ufficiali per stampa e web.</p>
-
-    <div class="grid cols-3">
-
-      <div class="card center reveal">
-        <img src="img/CS_white_all.png" alt="Logo bianco" style="width:min(150px,80%);">
-        <div class="row" style="margin-top:10px">
-          <a class="btn" href="img/CS_white_all.png" download>Scarica PNG bianco</a>
-        </div>
-      </div>
-
-      <div class="card light center reveal">
-        <img src="img/CS_black_all.png" alt="Logo nero" style="width:min(150px,80%);">
-        <div class="row" style="margin-top:10px">
-          <a class="btn" href="img/CS_black_all.png" download>Scarica PNG nero</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contatti</h2>
-
-    <p class="sub">Preferisci email o telefono. Rispondo in tempi brevi.</p>
-
-    <div class="grid">
-      <div class="card reveal">
-        <h3>Email</h3>
-        <p><a class="u" href="mailto:cenicristian@yahoo.com">cenicristian@yahoo.com</a></p>
-        <p><a class="u" href="mailto:cristian.ceni@edu.unifi.it">cristian.ceni@edu.unifi.it</a></p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Telefono</h3>
-        <p><a class="u" href="tel:+393398923317">+39 339 892 3317</a></p>
-      </div>
-
-      <div class="card reveal">
-        <h3>Curriculum</h3>
-        <p>Versione PDF aggiornata.</p>
-        <a class="btn" href="ceni-curriculum.pdf" download>Scarica</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© <span id="y"></span> 2025 Cristian Ceni</p>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('site-menu');
-    toggle.addEventListener('click', () => {
-      toggle.classList.toggle('active');
-      menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', toggle.classList.contains('active'));
-    });
-  </script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
