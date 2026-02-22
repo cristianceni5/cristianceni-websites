@@ -31,7 +31,7 @@ const jobsData = [
         skills: ["Elettricità", "Manutenzione", "Problem-solving"]
     },
     {
-        title: "Motatore infissi",
+        title: "Montatore infissi",
         company: "Fabio Ceni",
         year: "2025 - Present",
         details: "Lavoro nell'azienda di famiglia come motatore infissi, occupandomi dell'installazione e manutenzione di infissi (porte, finestre, ecc.) per clienti residenziali e commerciali.",
