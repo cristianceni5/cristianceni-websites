@@ -38,15 +38,46 @@ const jobsData = [
         skills: ["Manualità", "Manutenzione", "Problem-solving"]
     },
     {
-        title: "Developer Freelance",
+        title: "Developer Freelance - Web app",
         company: "Cristian Ceni",
         year: "2021 - Present",
         details: "Sviluppo di siti web e applicazioni per clienti freelance, con un focus su soluzioni personalizzate e responsive.",
-        skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Unity"]
+        skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"]
+    },
+       {
+        title: "Developer Freelance - Videogiochi",
+        company: "Cristian Ceni",
+        year: "2021 - Present",
+        details: "Sviluppo di videogiochi per testi e progetti personali, utilizzando Unity e C#.",
+        skills: ["Unity", "C#", "Game Design", "Problem-solving"]
     },
 ];
 
 const projectsData = [
+    {
+        image: "img/united.png",
+        title: "United Students - Social per studenti",
+        description: "Social network dedicato per tutti gli studenti, realizzato in collaborazione con Driftingmoon SRLS. L'obiettivo è creare una piattaforma dove gli studenti possono condividere risorse, fare domande e connettersi con altri studenti.",
+        link: "https://united.cenidev.com"
+    },
+    {
+        image: "img/treninfo.png",
+        title: "Treninfo - Applicazione mobile",
+        description: "Applicazione mobile per la gestione delle informazioni sui treni, fornendo aggiornamenti in tempo reale e notifiche agli utenti.",
+        link: "https://treninfo.cenidev.com"
+    },
+    {
+        image: "img/treninfo-server.png",
+        title: "Treninfo - Server",
+        description: "Server per l'applicazione Treninfo, gestendo le richieste degli utenti e fornendo dati in tempo reale sull'orario dei treni. Unisce le info di ViaggiaTreno, LeFrecce e ItaloTreno in un unico servizio.",
+        link: "https://treninfo.cenidev.com"
+    },
+     {
+        image: "img/gta.png",
+        title: "GTA VI - Nome familiare, ma non quello che pensi",
+        description: "Videogioco open world ispirato alla serie GTA, sviluppato per testare le mie competenze di sviluppo di videogiochi e game design. Meme per GTA VI, Rockstar Games non mi denunciare per favore.",
+        link: "https://gta.cenidev.com"
+    },
     {
         image: "img/cs_white.png",
         title: "Ceni Dev Website",
@@ -65,24 +96,6 @@ const projectsData = [
         description: "Semplice sito web per Arinails Salon, una nail artist. Il sito presenta i servizi offerti, una galleria di immagini e un modulo di contatto per prenotazioni e richieste.",
         link: "https://arinails.cenidev.com"
     },
-    {
-        image: "img/gauss.png",
-        title: "Gauss Project - Social per studenti",
-        description: "Social network dedicato per tutti gli studenti, prototipo in fase di sviluppo. L'obiettivo è creare una piattaforma dove gli studenti possono condividere risorse, fare domande e connettersi con altri studenti.",
-        link: "https://gauss.cenidev.com"
-    },
-    {
-        image: "img/treninfo.png",
-        title: "Treninfo - Applicazione mobile",
-        description: "Applicazione mobile per la gestione delle informazioni sui treni, fornendo aggiornamenti in tempo reale e notifiche agli utenti.",
-        link: "https://treninfo.cenidev.com"
-    },
-    {
-        image: "img/treninfo-server.png",
-        title: "Treninfo - Server",
-        description: "Server per l'applicazione Treninfo, gestendo le richieste degli utenti e fornendo dati in tempo reale sull'orario dei treni. Unisce le info di ViaggiaTreno, LeFrecce e ItaloTreno in un unico servizio.",
-        link: "https://treninfo.cenidev.com"
-    }
 ];
 
 //Function to display this brothers up here on the page
@@ -94,8 +107,8 @@ function displayEducation() {
         eduItem.innerHTML = `
             <img src="${edu.img}" alt="${edu.institution} logo" class="education-logo">
             <h3>${edu.title}</h3>
-            <p><strong>${edu.institution}</strong></p>
-            <p>${edu.year}</p>
+            <h4>${edu.institution}</h4>
+            <h4>${edu.year}</h4>
             <p>${edu.details}</p>
         `;
         eduCont.querySelector(".dynamic-edu").appendChild(eduItem);
@@ -110,8 +123,8 @@ function displayJobs() {
         jobItem.classList.add("job-item");
         jobItem.innerHTML = `
             <h3>${job.title}</h3>
-            <p><strong>${job.company}</strong></p>
-            <p>${job.year}</p>
+            <h4>${job.company}</h4>
+            <h4>${job.year}</h4>
             <p>${job.details}</p>
             <hr>
             <div class="job-skills">

@@ -2,16 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'Chalet';
+    src: url('Chalet-NewYorkSixty.otf') format('opentype');
+}
 
 :root {
     --color-primary: #7c8591;
     --color-secondary: #0050a5;
     --color-bg: #070707;
     --color-text: #fff;
+    --color-subtext: #777777;
     --color-card: #141414;
     --color-nav: #070707ad;
     --color-border: #3131315e;
-    --font-family-base: 'Google Sans', sans-serif;
+    --font-family-base: 'Chalet', sans-serif;
 
     --max-width: 1000px;
     --padding-lateral: 1.5rem;
@@ -21,7 +26,7 @@ body {
     font-family: var(--font-family-base);
     background: var(--color-bg);
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
 
     animation: fadeIn;
@@ -171,6 +176,7 @@ nav ul li {
 .button-icon:hover {
     background-color: var(--color-primary);
 }
+
 /*End home*/
 
 hr {
@@ -183,6 +189,10 @@ section {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0.5rem var(--padding-lateral) 5rem var(--padding-lateral);
+}
+
+h4 {
+    
 }
 
 /*Education*/
@@ -208,11 +218,16 @@ section {
 
 .education-item {
     background: var(--color-card);
-    border-radius: 10px;
-    padding: 1.2rem;
+    border-radius: 25px;
+    padding: 1.5rem;
     border: 1px solid var(--color-border);
 
     transition: transform 0.2s;
+}
+
+.education-item p {
+    margin: 0.5rem 0;
+    color: var(--color-subtext);
 }
 
 .education-item:hover {
@@ -238,11 +253,16 @@ section {
 
 .job-item {
     background: var(--color-card);
-    border-radius: 10px;
-    padding: 1.2rem;
+    border-radius: 25px;
+    padding: 1.5rem;
     border: 1px solid var(--color-border);
 
     transition: transform 0.2s;
+}
+
+.job-item p {
+    margin: 0.5rem 0;
+    color: var(--color-subtext);
 }
 
 .job-item:hover {
@@ -266,6 +286,7 @@ section {
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-border);
     border-radius: 999px;
+    color: var(--color-text);
 
     transition: transform 0.2s;
 }
@@ -294,14 +315,19 @@ section {
 
 .project-item {
     background: var(--color-card);
-    border-radius: 10px;
-    padding: 1.2rem;
+    border-radius: 25px;
+    padding: 1.5rem;
     border: 1px solid var(--color-border);
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
     min-height: 340px;
     height: auto;
+}
+
+.project-item p {
+    margin: 0.5rem 0;
+    color: var(--color-subtext);
 }
 
 .project-item:hover {
@@ -328,6 +354,7 @@ section {
 .project-item a:hover {
     text-decoration: underline;
 }
+
 /*End projects*/
 
 .footer {
